@@ -25,12 +25,12 @@
 ```mermaid
 timeline
     title Educational Journey
-    2025-Present : Master's of Technology, AI Systems
-                 : National University of Singapore
-    2016-2020   : Bachelor's of Technology
-                : Industrial and Production Engineering
-                : Indian Institute of Technology, Delhi
+    2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
                 : First Class Honours
+    2020-2025   : Data Analyt, World Wide Technology Pvt Ltd.
+                : Data Scientist, World Wide Technology Pvt Ltd.
+                : Senior Data Scientist, World Wide Technology Pvt Ltd.
+  2025-Present : Master's of Technology, AI Systems, National University of Singapore
 ```
 
 ---
@@ -347,20 +347,6 @@ flowchart TD
     style G fill:#4caf50
     style E fill:#ff9800
 ```
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical)
-
-</div>
-
----
 
 ## 🎯 Current Focus & Interests
 

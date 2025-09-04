@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Shantam Sharma!
+# Shantam Sharma
 
 <div align="center">
   
@@ -22,17 +22,10 @@
 
 ## 🎓 Education
 
-```mermaid
-timeline
-    title Educational Journey
-    2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
-                : First Class Honours
-    2020-2025   : Data Analyt, World Wide Technology Pvt Ltd.
-                : Data Scientist, World Wide Technology Pvt Ltd.
-                : Senior Data Scientist, World Wide Technology Pvt Ltd.
-  2025-Present : Master's of Technology, AI Systems, National University of Singapore
-```
-
+  2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
+                Industrial Engineering: First Class Honours
+  2025-Present : Master's of Technology, National University of Singapore
+                AI Systems
 ---
 
 ## 💼 Professional Experience

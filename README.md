@@ -16,15 +16,15 @@
 - 🏢 **5+ years** at World Wide Technology Inc. working with global clients
 - 🌍 Delivered solutions across **UAE, USA, Indonesia, Netherlands, and Peru**
 - 🎯 Specialized in **GenAI, Computer Vision, MLOps, and Industrial AI Applications**
-- 📊 Mitigated **$10M+** in safety risks through AI-powered solutions
+-  Expert **Python** developer, having developed models and pipelines using **Pytorch, Langchain, OpenCV, huggingface, NLTK, SHAP** atc. 
 
 ---
 
 ## 🎓 Education
 
-  2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
+- 2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
                 Industrial Engineering: First Class Honours
-  2025-Present : Master's of Technology, National University of Singapore
+- 2025-Present : Master's of Technology, National University of Singapore
                 AI Systems
 ---
 

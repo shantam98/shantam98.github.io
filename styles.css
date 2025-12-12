@@ -377,9 +377,12 @@ img {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 450px 1fr;
     gap: var(--spacing-2xl);
     align-items: start;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .hero-left {
@@ -390,6 +393,10 @@ img {
 
 .hero-intro {
     animation: fadeInUp 0.8s ease;
+    background-color: var(--bg-primary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
 }
 
 .hero-right {
@@ -401,6 +408,7 @@ img {
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
+    height: 100%;
 }
 
 .hero-about h3 {
@@ -415,6 +423,10 @@ img {
     line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
+}
+
+.hero-about p:last-child {
+    margin-bottom: 0;
 }
 
 .hero-text {
@@ -448,15 +460,17 @@ img {
 }
 
 .hero-description {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: var(--spacing-lg);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
 }
 
 .hero-buttons {
     display: flex;
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
 }
 
 .hero-social {
@@ -491,15 +505,17 @@ img {
 .image-wrapper {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .image-wrapper img {
     width: 100%;
-    border-radius: var(--radius-xl);
+    height: auto;
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
     position: relative;
     z-index: 2;
+    display: block;
 }
 
 .image-backdrop {

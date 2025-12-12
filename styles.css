@@ -378,7 +378,7 @@ img {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 315px 1fr;
+    grid-template-columns: 335px 1fr;
     gap: var(--spacing-2xl);
     align-items: start;
     width: 100%;

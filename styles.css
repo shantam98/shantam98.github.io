@@ -303,6 +303,61 @@ img {
 }
 
 /* ============================================
+   Sub-Navigation (Home page only)
+   ============================================ */
+.sub-navbar {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 0;
+    position: sticky;
+    top: 70px;
+    z-index: 900;
+    transition: all var(--transition-base);
+}
+
+.sub-nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.sub-nav-link:hover,
+.sub-nav-link.active {
+    color: var(--primary-color);
+}
+
+.sub-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: transform var(--transition-base);
+}
+
+.sub-nav-link:hover::after,
+.sub-nav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* ============================================
    Hero Section
    ============================================ */
 .hero {
@@ -322,9 +377,44 @@ img {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xl);
-    align-items: center;
+    grid-template-columns: 400px 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.hero-intro {
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-right {
+    animation: fadeInRight 0.8s ease;
+}
+
+.hero-about {
+    background-color: var(--bg-primary);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-about h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.hero-about p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
 }
 
 .hero-text {
@@ -334,14 +424,14 @@ img {
 .greeting {
     display: block;
     color: var(--primary-color);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
     margin-bottom: var(--spacing-xs);
 }
 
 .name {
     display: block;
-    font-size: 3.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: var(--spacing-sm);
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
@@ -351,7 +441,7 @@ img {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-weight: 500;
@@ -366,7 +456,7 @@ img {
 .hero-buttons {
     display: flex;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
 }
 
 .hero-social {
@@ -375,8 +465,8 @@ img {
 }
 
 .hero-social a {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,14 +485,13 @@ img {
 }
 
 .hero-image {
-    animation: fadeInRight 0.8s ease;
+    animation: fadeInDown 0.8s ease;
 }
 
 .image-wrapper {
     position: relative;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
 }
 
 .image-wrapper img {

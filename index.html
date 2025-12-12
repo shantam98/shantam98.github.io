@@ -46,6 +46,18 @@
         </div>
     </nav>
 
+    <!-- Sub-Navigation (Home page only) -->
+    <nav class="sub-navbar" id="subNavbar">
+        <div class="container">
+            <ul class="sub-nav-menu">
+                <li><a href="#about" class="sub-nav-link">About</a></li>
+                <li><a href="#projects" class="sub-nav-link">Featured</a></li>
+                <li><a href="#skills" class="sub-nav-link">Skills</a></li>
+                <li><a href="#contact" class="sub-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-container">
@@ -62,9 +74,6 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="https://drive.google.com/YOUR_CV_LINK" target="_blank" class="btn btn-secondary">
-                            <i class="fas fa-download"></i> Download CV
-                        </a>
                     </div>
                     <div class="hero-social">
                         <a href="https://linkedin.com/in/shantam98" target="_blank" aria-label="LinkedIn">
@@ -94,44 +103,30 @@
     </section>
 
     <!-- About Section -->
-    <section class="section about-section">
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">My Journey & Achievements</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <h3>Bridging AI Research and Real-World Applications</h3>
-                    <p>
-                        I'm a passionate AI Engineer specializing in developing innovative solutions that 
-                        make a real-world impact. With a strong foundation in Industrial Engineering from 
-                        IIT Delhi and currently pursuing my Master's in AI Systems at NUS, I bring a unique 
-                        blend of technical expertise and practical problem-solving skills.
-                    </p>
-                    <p>
-                        My journey spans 5+ years at World Wide Technology Inc., where I've delivered 
-                        cutting-edge AI solutions across multiple continents—from safety systems in UAE 
-                        to predictive maintenance in Indonesia, and GenAI applications worldwide.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <h4>Global Impact</h4>
-                                <p>Delivered solutions across UAE, USA, Indonesia, Netherlands, and Peru</p>
-                            </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Global Impact</h4>
+                            <p>Delivered solutions across UAE, USA, Indonesia, Netherlands, and Peru</p>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <div>
-                                <h4>AI Specialization</h4>
-                                <p>GenAI, Computer Vision, MLOps, and Industrial AI Applications</p>
-                            </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <h4>AI Specialization</h4>
+                            <p>GenAI, Computer Vision, MLOps, and Industrial AI Applications</p>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Technical Excellence</h4>
-                                <p>Expert in PyTorch, Langchain, OpenCV, Hugging Face, and more</p>
-                            </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h4>Technical Excellence</h4>
+                            <p>Expert in PyTorch, Langchain, OpenCV, Hugging Face, and more</p>
                         </div>
                     </div>
                 </div>
@@ -216,7 +211,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section projects-section">
+    <section id="skills" class="section projects-section">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-content">
@@ -339,7 +334,7 @@
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="section projects-section">
+    <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">A selection of impactful projects demonstrating expertise in AI/ML solutions</p>
@@ -495,7 +490,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact-section">
+    <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <p class="section-subtitle">Let's collaborate on your next AI project</p>

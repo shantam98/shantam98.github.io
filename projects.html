@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shantam Sharma - All Projects. Complete portfolio of AI/ML projects.">
+    <meta name="keywords" content="AI Projects, Machine Learning Projects, GenAI, Computer Vision, MLOps">
+    <meta name="author" content="Shantam Sharma">
+    
+    <title>All Projects | Shantam Sharma</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Shantam Sharma</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="section projects-header">
+        <div class="container">
+            <h1 class="section-title">All Projects</h1>
+            <p class="section-subtitle">Complete portfolio of AI/ML projects demonstrating expertise across various domains</p>
+        </div>
+    </section>
+
+    <!-- All Projects Section -->
+    <section class="section projects-section">
+        <div class="container">
+            <!-- Current Engagement -->
+            <div class="current-work">
+                <div class="current-badge">
+                    <i class="fas fa-circle pulse"></i> Currently Working On
+                </div>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3>AI Systems Research - NUS</h3>
+                        <span class="project-status current">In Progress</span>
+                    </div>
+                    <p class="project-description">
+                        Advanced research in neural architecture optimization and autonomous systems. 
+                        Exploring novel approaches to model efficiency and real-time inference for edge devices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">CUDA</span>
+                        <span class="tech-tag">Neural Architecture Search</span>
+                        <span class="tech-tag">Edge Computing</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="projects-subtitle">Completed Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>GenAI Asset Integrity Platform</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Developed AI-powered asset integrity monitoring system for Chevron's oil & gas facilities. 
+                        Leveraged computer vision and LLMs for automated inspection and maintenance optimization.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Langchain</span>
+                        <span class="tech-tag">Azure OpenAI</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> 30% reduction in inspection time
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Automated visual inspection using custom CV models</li>
+                            <li>Natural language query interface for maintenance logs</li>
+                            <li>Predictive maintenance recommendations</li>
+                            <li>Integration with existing CMMS systems</li>
+                        </ul>
+                        <h4>Technical Highlights:</h4>
+                        <ul>
+                            <li>Fine-tuned CLIP model for industrial equipment classification</li>
+                            <li>RAG pipeline with ChromaDB for document retrieval</li>
+                            <li>Real-time anomaly detection on edge devices</li>
+                            <li>Azure ML deployment with 99.9% uptime</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Predictive Maintenance System</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Built end-to-end predictive maintenance solution for manufacturing facilities. 
+                        Reduced unplanned downtime by 45% using time-series forecasting and deep learning.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">Time Series</span>
+                        <span class="tech-tag">MLOps</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> 45% downtime reduction
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Real-time sensor data processing from 100+ machines</li>
+                            <li>Anomaly detection using deep learning</li>
+                            <li>Remaining useful life (RUL) prediction</li>
+                            <li>Dashboard for maintenance scheduling optimization</li>
+                        </ul>
+                        <h4>Business Impact:</h4>
+                        <ul>
+                            <li>$2M+ annual savings from reduced downtime</li>
+                            <li>Improved maintenance team efficiency by 40%</li>
+                            <li>Extended equipment lifespan by 15%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Computer Vision QC System</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Developed automated quality control system for Unilever Peru production lines. 
+                        Achieved 95% accuracy in defect detection, significantly improving product quality consistency.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Edge Deployment</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> 95% detection accuracy
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Real-time defect detection at production speed</li>
+                            <li>Multi-class defect classification</li>
+                            <li>Integration with existing conveyor systems</li>
+                            <li>Automated reporting and analytics dashboard</li>
+                        </ul>
+                        <h4>Technical Implementation:</h4>
+                        <ul>
+                            <li>Custom YOLO model trained on 50K+ labeled images</li>
+                            <li>Deployed on edge devices for low-latency inference</li>
+                            <li>Continuous learning pipeline for model improvement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Multimodal RAG System</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Created enterprise document analysis system processing text, images, and tables. 
+                        Implemented advanced RAG architecture with vector databases for accurate information retrieval.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Langchain</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">LlamaIndex</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Multi-modal document understanding (text, tables, images)</li>
+                            <li>Context-aware question answering</li>
+                            <li>Citation and source tracking</li>
+                            <li>Scalable vector search with ChromaDB</li>
+                        </ul>
+                        <h4>Architecture:</h4>
+                        <ul>
+                            <li>Microservices architecture with FastAPI</li>
+                            <li>Chunking strategies optimized for different content types</li>
+                            <li>Hybrid search combining semantic and keyword matching</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Supply Chain Optimization (RL)</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Applied reinforcement learning algorithms to optimize supply chain operations. 
+                        Improved inventory management and reduced logistics costs by 20%.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Reinforcement Learning</span>
+                        <span class="tech-tag">OpenAI Gym</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Optimization</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> 20% cost reduction
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Approach:</h4>
+                        <ul>
+                            <li>Modeled supply chain as Markov Decision Process</li>
+                            <li>Implemented Deep Q-Network (DQN) for policy learning</li>
+                            <li>Multi-agent coordination for distributed facilities</li>
+                            <li>Simulation environment for policy evaluation</li>
+                        </ul>
+                        <h4>Results:</h4>
+                        <ul>
+                            <li>20% reduction in logistics costs</li>
+                            <li>15% improvement in inventory turnover</li>
+                            <li>Better demand forecasting accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>NLP Sentiment Analysis Pipeline</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Built large-scale sentiment analysis pipeline processing customer feedback from multiple channels. 
+                        Enabled data-driven decision making through real-time insights.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">Hugging Face</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">Apache Spark</span>
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Pipeline Components:</h4>
+                        <ul>
+                            <li>Multi-source data ingestion (social media, reviews, support tickets)</li>
+                            <li>Text preprocessing and cleaning at scale</li>
+                            <li>Fine-tuned BERT model for domain-specific sentiment</li>
+                            <li>Real-time streaming analysis with Spark</li>
+                        </ul>
+                        <h4>Features:</h4>
+                        <ul>
+                            <li>Aspect-based sentiment analysis</li>
+                            <li>Trend detection and alerting</li>
+                            <li>Interactive dashboards for stakeholders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <p>Interested in discussing these projects in detail?</p>
+                <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Shantam Sharma</h3>
+                    <p>Engineer, AI and Data Science</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/shantam98" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/shantam98" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:shantam.sharma98@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/shantam98" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/shantam98" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:shantam.sharma98@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shantam Sharma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

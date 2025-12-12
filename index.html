@@ -31,7 +31,6 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -218,94 +217,8 @@
         </div>
     </section>
 
-    <!-- Professional Summary Section -->
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="experience-content">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div class="experience-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="experience-info">
-                            <h3>Senior Data Scientist</h3>
-                            <h4>World Wide Technology Inc.</h4>
-                            <p class="experience-period">July 2020 - July 2025 | 5 years</p>
-                        </div>
-                    </div>
-                    <div class="experience-description">
-                        <p>
-                            Led development and deployment of enterprise-scale AI/ML solutions for Fortune 500 
-                            clients across oil & gas, manufacturing, and technology sectors. Specialized in 
-                            GenAI applications, computer vision systems, and predictive analytics.
-                        </p>
-                        <ul class="experience-achievements">
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                Developed GenAI asset integrity system mitigating $10M+/year safety risks at ADNOC
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                Built predictive maintenance platform reducing downtime by 30% for Indonesian manufacturing
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                Created computer vision quality control system achieving 95% accuracy at Unilever Peru
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                Led MLOps initiatives establishing CI/CD pipelines for model deployment
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                Mentored junior data scientists and conducted technical workshops
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div class="experience-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="experience-info">
-                            <h3>Key Academic Projects & Internships</h3>
-                            <h4>IIT Delhi & Research Internships</h4>
-                        </div>
-                    </div>
-                    <div class="experience-description">
-                        <ul class="experience-achievements">
-                            <li>
-                                <i class="fas fa-flask"></i>
-                                <strong>Research Intern - A*STAR Institute (Singapore):</strong> 
-                                Developed neural architecture search algorithms for automated ML model optimization
-                            </li>
-                            <li>
-                                <i class="fas fa-robot"></i>
-                                <strong>Computer Vision Project:</strong> 
-                                Built real-time object detection system using YOLO for manufacturing defect detection
-                            </li>
-                            <li>
-                                <i class="fas fa-chart-line"></i>
-                                <strong>Optimization Research:</strong> 
-                                Applied reinforcement learning to supply chain optimization problems
-                            </li>
-                            <li>
-                                <i class="fas fa-project-diagram"></i>
-                                <strong>Capstone Project:</strong> 
-                                Developed predictive analytics dashboard for industrial process monitoring
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-content">
@@ -574,122 +487,11 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Multimodal RAG System</h3>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <p class="project-description">
-                        Created enterprise document analysis system processing text, images, and tables. 
-                        Implemented advanced RAG architecture with vector databases for accurate information retrieval.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Langchain</span>
-                        <span class="tech-tag">ChromaDB</span>
-                        <span class="tech-tag">LlamaIndex</span>
-                        <span class="tech-tag">FastAPI</span>
-                    </div>
-                    <button class="project-expand" onclick="toggleProjectDetails(this)">
-                        <i class="fas fa-chevron-down"></i> View Details
-                    </button>
-                    <div class="project-details">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Multi-modal document understanding (text, tables, images)</li>
-                            <li>Context-aware question answering</li>
-                            <li>Citation and source tracking</li>
-                            <li>Scalable vector search with ChromaDB</li>
-                        </ul>
-                        <h4>Architecture:</h4>
-                        <ul>
-                            <li>Microservices architecture with FastAPI</li>
-                            <li>Chunking strategies optimized for different content types</li>
-                            <li>Hybrid search combining semantic and keyword matching</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Supply Chain Optimization (RL)</h3>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <p class="project-description">
-                        Applied reinforcement learning algorithms to optimize supply chain operations. 
-                        Improved inventory management and reduced logistics costs by 20%.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Reinforcement Learning</span>
-                        <span class="tech-tag">OpenAI Gym</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                    <div class="project-impact">
-                        <i class="fas fa-chart-line"></i> 20% cost reduction
-                    </div>
-                    <button class="project-expand" onclick="toggleProjectDetails(this)">
-                        <i class="fas fa-chevron-down"></i> View Details
-                    </button>
-                    <div class="project-details">
-                        <h4>Approach:</h4>
-                        <ul>
-                            <li>Modeled supply chain as Markov Decision Process</li>
-                            <li>Implemented Deep Q-Network (DQN) for policy learning</li>
-                            <li>Multi-agent coordination for distributed facilities</li>
-                            <li>Simulation environment for policy evaluation</li>
-                        </ul>
-                        <h4>Results:</h4>
-                        <ul>
-                            <li>20% reduction in logistics costs</li>
-                            <li>15% improvement in inventory turnover</li>
-                            <li>Better demand forecasting accuracy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>NLP Sentiment Analysis Pipeline</h3>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <p class="project-description">
-                        Built large-scale sentiment analysis pipeline processing customer feedback from multiple channels. 
-                        Enabled data-driven decision making through real-time insights.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">BERT</span>
-                        <span class="tech-tag">Hugging Face</span>
-                        <span class="tech-tag">NLTK</span>
-                        <span class="tech-tag">Apache Spark</span>
-                    </div>
-                    <button class="project-expand" onclick="toggleProjectDetails(this)">
-                        <i class="fas fa-chevron-down"></i> View Details
-                    </button>
-                    <div class="project-details">
-                        <h4>Pipeline Components:</h4>
-                        <ul>
-                            <li>Multi-source data ingestion (social media, reviews, support tickets)</li>
-                            <li>Text preprocessing and cleaning at scale</li>
-                            <li>Fine-tuned BERT model for domain-specific sentiment</li>
-                            <li>Real-time streaming analysis with Spark</li>
-                        </ul>
-                        <h4>Features:</h4>
-                        <ul>
-                            <li>Aspect-based sentiment analysis</li>
-                            <li>Trend detection and alerting</li>
-                            <li>Interactive dashboards for stakeholders</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
             <div class="projects-cta">
-                <p>Interested in more details about these projects?</p>
-                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                <p>Want to see more of my work?</p>
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
             </div>
         </div>
     </section>

@@ -23,9 +23,10 @@
 ## 🎓 Education
 
 - 2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
-                Industrial Engineering: First Class Honours
+            - Industrial Engineering: First Class Honours
 - 2025-Present : Master's of Technology, National University of Singapore
-                AI Systems
+            - AI Systems
+
 ---
 
 ## 💼 Professional Experience

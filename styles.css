@@ -440,13 +440,27 @@ img {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--spacing-md);
+    text-align: left;
 }
 
 .timeline-horizontal {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-sm);
     margin-top: var(--spacing-sm);
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .timeline-horizontal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-horizontal {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .timeline-item {

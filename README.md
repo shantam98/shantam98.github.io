@@ -1,374 +1,354 @@
-# Shantam Sharma
+# Shantam Sharma - Portfolio Website
 
-<div align="center">
-  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/shantam98)
-[![Email](https://img.shields.io/badge/Email-shantam.sharma98%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:shantam.sharma98@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Singapore-green?style=for-the-badge&logo=googlemaps)](https://maps.google.com/singapore)
+A modern, responsive portfolio website built with HTML, CSS, and JavaScript for GitHub Pages.
 
+## 🎨 Features
+
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Lightweight**: No heavy frameworks, pure HTML/CSS/JS for fast loading
+- **SEO Optimized**: Proper meta tags and semantic HTML
+- **Accessible**: WCAG compliant with keyboard navigation support
+- **GitHub Pages Ready**: Optimized for deployment on GitHub Pages
+
+## 📋 Sections
+
+1. **Hero Section**: Eye-catching introduction with name, title, and social links
+2. **About**: Personal summary and key highlights
+3. **Professional Summary**: Detailed work experience and achievements
+4. **Timeline**: Visual journey from high school to present
+5. **Skills**: Comprehensive skills organized by category with proficiency levels
+6. **Projects**: Expandable project cards with technical details and impact
+7. **Contact**: Multiple contact methods and CV download section
+
+## 🚀 Quick Start
+
+### Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/shantam98/shantam98.github.io.git
+cd shantam98.github.io
+```
+
+2. Open `index.html` in your browser:
+```bash
+# On Linux/Mac
+open index.html
+
+# On Windows
+start index.html
+```
+
+3. Or use a local server (recommended):
+```bash
+# Using Python 3
+python -m http.server 8000
+
+# Using Node.js
+npx serve
+
+# Then visit http://localhost:8000
+```
+
+### Deploy to GitHub Pages
+
+1. Push your code to GitHub:
+```bash
+git add .
+git commit -m "Initial portfolio website"
+git push origin main
+```
+
+2. Enable GitHub Pages:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select "main" branch as source
+   - Click "Save"
+
+3. Your site will be live at: `https://shantam98.github.io`
+
+## ⚙️ Customization
+
+### 1. Update Personal Information
+
+Edit `index.html` and update:
+
+- **CV Links**: Replace `YOUR_CV_LINK` placeholders with your actual Google Drive links
+- **Profile Photo**: Replace `assets/linkedIN.jpg` with your photo
+- **Contact Info**: Update LinkedIn, email, and GitHub links
+- **Projects**: Add/modify project details in the projects section
+- **Experience**: Update work history and achievements
+- **Skills**: Modify skill tags to match your expertise
+
+### 2. Update Google Drive CV Links
+
+Get your Google Drive shareable links:
+
+1. Upload your CV to Google Drive
+2. Right-click → "Get link"
+3. Set to "Anyone with the link can view"
+4. Copy the link
+
+For **Download Link**:
+```
+https://drive.google.com/uc?export=download&id=YOUR_FILE_ID
+```
+
+For **View Link**:
+```
+https://drive.google.com/file/d/YOUR_FILE_ID/view
+```
+
+Replace in `index.html`:
+- Line 64 (Hero section download button)
+- Line 576 & 579 (Contact section buttons)
+
+### 3. Customize Colors
+
+Edit `styles.css` CSS variables (lines 5-20):
+
+```css
+:root {
+    --primary-color: #2563eb;      /* Main brand color */
+    --primary-dark: #1e40af;       /* Darker shade */
+    --accent-color: #8b5cf6;       /* Accent color */
+    /* ... more variables */
+}
+```
+
+### 4. Add Favicon
+
+1. Create a favicon (16x16 or 32x32 pixels)
+2. Save as `assets/favicon.ico`
+3. The HTML already references it (line 14)
+
+Online favicon generators:
+- https://favicon.io
+- https://realfavicongenerator.net
+
+### 5. Modify Sections
+
+To add/remove sections:
+
+1. Edit the HTML structure in `index.html`
+2. Add corresponding navigation link in the navbar
+3. Update `script.js` if needed for animations
+
+### 6. Update Project Details
+
+Each project card follows this structure:
+
+```html
+<div class="project-card">
+    <div class="project-header">
+        <h3>Project Title</h3>
+        <span class="project-status completed">Status</span>
+    </div>
+    <p class="project-description">Description...</p>
+    <div class="project-tech">
+        <span class="tech-tag">Technology</span>
+    </div>
+    <!-- More details... -->
 </div>
-
-## 🚀 About Me
-
-**Senior Data Scientist & AI Systems Graduate Student** with 5+ years of experience developing and deploying machine learning solutions across diverse industries. Passionate about bridging the gap between cutting-edge AI research and real-world applications.
-
-- 🎓 Currently pursuing **Master's in AI Systems** at National University of Singapore
-- 🏢 **5+ years** at World Wide Technology Inc. working with global clients
-- 🌍 Delivered solutions across **UAE, USA, Indonesia, Netherlands, and Peru**
-- 🎯 Specialized in **GenAI, Computer Vision, MLOps, and Industrial AI Applications**
--  Expert **Python** developer, having developed models and pipelines using **Pytorch, Langchain, OpenCV, huggingface, NLTK, SHAP** atc. 
-
----
-
-## 🎓 Education
-
-- 2016-2020   : Bachelor's of Technology, Indian Institute of Technology, Delhi
-            - Industrial Engineering: First Class Honours
-- 2025-Present : Master's of Technology, National University of Singapore
-            - AI Systems
-
----
-
-## 💼 Professional Experience
-
-### 🏢 Senior Data Scientist @ World Wide Technology Inc. (July 2020 - July 2025)
-
-## 🔥 Key Projects Portfolio
-
-### 1. 🛡️ GenAI for Asset Integrity and Process Safety
-**Impact: Mitigated $10M+/year safety risks at ADNOC**
-
-```mermaid
-graph TD
-    A[Historical Safety Data] --> B[Text2SQL Chat Agent]
-    B --> C[Automated Graph Generation]
-    A --> D[LLM Trend Analysis]
-    D --> E[Hazard Event Insights]
-    A --> F[Control KPIs Development]
-    F --> G[Risk Likelihood Prediction]
-    
-    H[BERT Fine-tuning] --> I[Text Classification]
-    I --> J[Oil & Gas Data Processing]
-    
-    K[Docker Deployment] --> L[AzureML Platform]
-    L --> M[ADIPEC 2024 Demo]
-    
-    style A fill:#e1f5fe
-    style M fill:#c8e6c9
-    style G fill:#ffcdd2
 ```
 
-**Technologies Used:**
-- 🤖 **LLMs**: GPT-4, BERT fine-tuning
-- ☁️ **Cloud**: AzureML, Docker
-- 📊 **Analytics**: Text2SQL, Prompt Engineering
-- 🎯 **Impact**: Real-time hazard prediction system
+## 🎨 Design Recommendations
 
----
+### Color Schemes (Alternatives)
 
-### 2. 🛒 Recommendation System for Retail
-**Advanced ML-powered personalized product recommendations**
-
-```mermaid
-flowchart LR
-    A[Customer Data] --> B[Data Warehouse]
-    C[Engagement Tools] --> B
-    D[Loyalty Data] --> B
-    E[Marketing Data] --> B
-    
-    B --> F[Collaborative Filtering]
-    B --> G[Matrix Factorization]
-    
-    H[Customer Profiling] --> I[KMeans Clustering]
-    H --> J[DBSCAN]
-    
-    F --> K[Recommendation Engine]
-    G --> K
-    I --> K
-    J --> K
-    
-    style K fill:#4caf50
-    style B fill:#2196f3
+**Professional Blue** (Current):
+```css
+--primary-color: #2563eb;
+--accent-color: #8b5cf6;
 ```
 
-**Key Achievements:**
-- 📈 Integrated multiple data sources into unified warehouse
-- 🎯 Advanced customer segmentation using unsupervised learning
-- 🔄 Real-time personalized recommendations
-
----
-
-### 3. 👁️ Computer Vision for Real-Time Inspection
-**Minimized safety risks and operation downtime in mining**
-
-```mermaid
-graph TB
-    A[Mineral Ore Images] --> B[Feature Extraction]
-    
-    B --> C[GLCM Features]
-    B --> D[Gabor Filters]
-    B --> E[Power Spectral Density]
-    B --> F[Optical Flow]
-    
-    C --> G[Texture Analysis]
-    D --> G
-    E --> H[Volume Estimation]
-    F --> I[Flow Rate Detection]
-    
-    G --> J[Anomaly Detection Models]
-    H --> J
-    I --> J
-    
-    J --> K[Autoencoder]
-    J --> L[Siamese Network]
-    
-    K --> M[Edge Deployment]
-    L --> M
-    M --> N[TensorRT Optimization]
-    N --> O[4 FPS Real-time Processing]
-    
-    style O fill:#4caf50
-    style A fill:#e1f5fe
+**Tech Green**:
+```css
+--primary-color: #059669;
+--accent-color: #3b82f6;
 ```
 
-**Technical Specifications:**
-- ⚡ **Performance**: 4 FPS real-time processing
-- 🖥️ **Deployment**: GPU-optimized edge computing
-- 🔧 **Architecture**: Autoencoder + Siamese Networks
-- 📱 **Platform**: TensorRT for latency optimization
-
----
-
-### 4. ⚗️ Physical Modeling for Product Quality Forecast
-**Increased molybdenum mineral production by 3%**
-
-```mermaid
-flowchart TD
-    A[Chemical Plant 1] --> D[Digital Twin Model]
-    B[Chemical Plant 2] --> D
-    C[Chemical Plant 3] --> D
-    
-    D --> E[Impurity Concentration Prediction]
-    
-    F[Optimization Algorithms] --> G[L-BFGS-B]
-    F --> H[Nelder-Mead]
-    F --> I[Trust-Region]
-    
-    G --> J[Performance Optimization]
-    H --> J
-    I --> J
-    
-    K[ML Forecasting] --> L[Random Forest]
-    K --> M[Boosted Trees]
-    K --> N[RNNs]
-    K --> O[CNNs]
-    
-    L --> P[Quality Prediction]
-    M --> P
-    N --> P
-    O --> P
-    
-    style P fill:#4caf50
-    style D fill:#ff9800
+**Modern Purple**:
+```css
+--primary-color: #7c3aed;
+--accent-color: #ec4899;
 ```
 
----
-
-### 5. ⛏️ Mining Operation Optimization
-**Increased production hours by 8%**
-
-```mermaid
-graph LR
-    A[Sensor Data] --> B[Kalman Filter]
-    B --> C[Mineral Concentration Estimation]
-    
-    D[Ore Crusher Images] --> E[CNN Classification]
-    E --> F[Obstruction Detection - 98% Accuracy]
-    
-    G[Edge Devices] --> H[AzureML Integration]
-    H --> I[Real-time Monitoring]
-    
-    C --> I
-    F --> I
-    
-    style F fill:#4caf50
-    style I fill:#2196f3
+**Corporate Navy**:
+```css
+--primary-color: #1e40af;
+--accent-color: #0891b2;
 ```
 
----
+### Typography
 
-### 6. 📱 Churn Analytics for Telecom
-**Advanced customer retention insights**
+Current font: **Inter** (Google Fonts)
 
-```mermaid
-sankey
-    Customer Data,Network Performance,300GB
-    Customer Data,Traffic Data,300GB
-    Network Performance,Hotspot Analysis,200GB
-    Traffic Data,Competitor Analysis,200GB
-    Hotspot Analysis,Churned Customers,150GB
-    Competitor Analysis,Service Correlation,150GB
-    Churned Customers,ML Models,100GB
-    Service Correlation,ML Models,100GB
-    ML Models,Random Forest,50GB
-    ML Models,XGBoost,50GB
-    Random Forest,Churn Prediction,25GB
-    XGBoost,Churn Prediction,25GB
+Alternative professional fonts:
+- **Poppins**: Modern and friendly
+- **Roboto**: Clean and versatile
+- **Open Sans**: Highly readable
+- **Montserrat**: Bold and modern
+
+To change font, update line 19 in `index.html`:
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 ```
 
----
-
-## 🔬 Research & Development Initiatives
-
-### 🌌 Quantum Computing Exploration
-```mermaid
-mindmap
-  root((Quantum Computing))
-    Libraries
-      Qiskit
-      Q#
-      Bracket
-      Pennylane
-    Programs
-      Bell State
-      Classification
-    Hardware
-      Rigetti
-      IONQ
-    Platforms
-      AWS Quantum
-      Azure Quantum
+And line 32 in `styles.css`:
+```css
+--font-primary: 'Poppins', sans-serif;
 ```
 
-### 🤝 Federated Learning Research
-- **Methodologies**: Auto-Fed Averaging, Hyper-Networks
-- **Dataset**: CIFAR-10
-- **KPIs**: Generalization, Personalization, Robustness
+## 📱 Browser Compatibility
 
-### 🔧 AIOps Framework
-- **Modular Design**: Python-based ML framework
-- **Libraries**: ADTK, ARIMA
-- **Integration**: Splunk, Prometheus
-- **Applications**: Failure detection, Load forecasting
+- Chrome 90+ ✅
+- Firefox 88+ ✅
+- Safari 14+ ✅
+- Edge 90+ ✅
+- Mobile browsers ✅
 
----
+## 🔧 Advanced Customization
 
-## 🛠️ Technical Skills
+### Add Google Analytics
 
-### Programming Languages
-![Python](https://img.shields.io/badge/Python-Expert-blue?style=flat-square&logo=python)
-![Java](https://img.shields.io/badge/Java-Advanced-orange?style=flat-square&logo=java)
-![C++](https://img.shields.io/badge/C++-Advanced-blue?style=flat-square&logo=cplusplus)
-![SQL](https://img.shields.io/badge/SQL-Expert-blue?style=flat-square&logo=postgresql)
-![MATLAB](https://img.shields.io/badge/MATLAB-Intermediate-orange?style=flat-square&logo=mathworks)
+Add before closing `</head>` tag in `index.html`:
 
-### AI/ML Specializations
-```mermaid
-mindmap
-  root((AI/ML Skills))
-    Deep Learning
-      Computer Vision
-      NLP
-      Neural Networks
-    Machine Learning
-      Supervised Learning
-      Unsupervised Learning
-      Reinforcement Learning
-    GenAI
-      LLM Fine-tuning
-      Prompt Engineering
-      Text2SQL
-    MLOps
-      Model Deployment
-      Docker
-      AzureML
-      AWS
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 ```
 
-### Cloud & Tools
-![Azure](https://img.shields.io/badge/Azure-Expert-blue?style=flat-square&logo=microsoftazure)
-![AWS](https://img.shields.io/badge/AWS-Advanced-orange?style=flat-square&logo=amazonaws)
-![Docker](https://img.shields.io/badge/Docker-Advanced-blue?style=flat-square&logo=docker)
-![Databricks](https://img.shields.io/badge/Databricks-Advanced-red?style=flat-square&logo=databricks)
-![Snowflake](https://img.shields.io/badge/Snowflake-Intermediate-blue?style=flat-square&logo=snowflake)
+### Add Contact Form
 
----
+Consider integrating:
+- **Formspree**: https://formspree.io
+- **Netlify Forms**: https://www.netlify.com/products/forms/
+- **EmailJS**: https://www.emailjs.com
 
-## 🏆 Publications & Achievements
+### Add Blog Section
 
-### 📚 Publications
-- **"Power Usage Effectiveness (PUE) Optimization"** for Data Centers (July 2023)
-- **"A Modular Approach to AIOps"** - Presented at NVIDIA GTC'22 (November 2022)
+Create `blog.html` and link from projects or create a dedicated blog section using:
+- Jekyll (GitHub Pages native)
+- Hugo
+- Custom HTML pages
 
-### 🎖️ Awards & Recognition
-- 🏅 **Excellence Award** - WWT India for outstanding performance in mining projects (June 2022)
-- 🏆 **Certificate of Merit** - CBSE for 100th percentile in Mathematics (May 2016)
-- 🥇 **Top 1%** - National Standard Examination of Physics (January 2016)
+## 📝 Content Tips
 
----
+### Writing Project Descriptions
 
-## 🚀 Notable Projects & Internships
+**Format**:
+1. **Problem**: What challenge did you solve?
+2. **Solution**: What did you build?
+3. **Impact**: What were the results?
+4. **Tech Stack**: What tools did you use?
 
-### 🔍 Stock Market Analysis - IIT Delhi Research
-```mermaid
-graph LR
-    A[Traditional Markowitz] --> C[Performance Comparison]
-    B[Forecast-based Selection] --> C
-    C --> D[Statistical Validation]
-    D --> E[Right-tailed t-test]
-    E --> F[95% Confidence Interval]
-    F --> G[Better Performance Confirmed]
-    
-    style G fill:#4caf50
+**Example**:
+```
+Built predictive maintenance solution reducing equipment downtime 
+by 30% through advanced sensor data analysis and failure prediction 
+using PyTorch, LSTM networks, and MLflow.
 ```
 
-### 🏠 Business Analytics - NoBroker
-- **SQL Strategy Implementation**:
-  - Customer-Executive allocation optimization
-  - Dynamic reallocation algorithms
-  - Performance-based matching
+### Skills Organization
 
-### 👁️ MAVI - Mobility Assistant for Visually Impaired
-```mermaid
-flowchart TD
-    A[Camera Input] --> B[YOLO-v2 Object Detection]
-    B --> C[Raspberry Pi Processing]
-    C --> D[Movidius Neural Stick]
-    D --> E[CPU Load Reduction - 70%]
-    E --> F[Text-to-Speech API]
-    F --> G[8 FPS Real-time Output]
-    
-    style G fill:#4caf50
-    style E fill:#ff9800
+Use three proficiency levels:
+- **Expert**: 3+ years, production experience
+- **Advanced**: 1-3 years, multiple projects
+- **Intermediate**: <1 year, learning/hobby projects
+
+## 🐛 Troubleshooting
+
+### Images Not Loading
+
+1. Check file path is correct
+2. Ensure image exists in `assets/` folder
+3. Verify file extension matches (jpg vs jpeg)
+
+### Styles Not Applying
+
+1. Hard refresh: `Ctrl + Shift + R` (Windows/Linux) or `Cmd + Shift + R` (Mac)
+2. Clear browser cache
+3. Check CSS file path in HTML
+
+### GitHub Pages Not Updating
+
+1. Wait 2-3 minutes after push
+2. Check GitHub Actions for build status
+3. Clear browser cache
+4. Try incognito mode
+
+### Mobile Menu Not Working
+
+1. Check JavaScript is loaded
+2. Verify no console errors (F12 → Console)
+3. Ensure IDs match in HTML and JS
+
+## 📄 File Structure
+
+```
+shantam98.github.io/
+├── index.html          # Main HTML file
+├── styles.css          # CSS styling
+├── script.js           # JavaScript functionality
+├── README.md           # This file
+└── assets/
+    ├── linkedIN.jpg    # Profile photo
+    └── favicon.ico     # Website icon (add this)
 ```
 
-## 🎯 Current Focus & Interests
+## 🎯 Performance Tips
 
-- 🤖 **Generative AI**: Advanced LLM applications in industrial settings
-- 🌐 **Edge Computing**: Optimizing AI for resource-constrained environments
-- 🏭 **Industrial AI**: AI solutions for manufacturing and process industries
-- 🔬 **Research**: Impact of knowledge graphs as data representation on AI solutions
+1. **Optimize Images**:
+   - Use WebP format
+   - Compress before uploading
+   - Max width: 1200px for photos
+
+2. **Minify Code** (Production):
+   ```bash
+   # CSS
+   npm install -g csso-cli
+   csso styles.css -o styles.min.css
+   
+   # JavaScript
+   npm install -g terser
+   terser script.js -o script.min.js
+   ```
+
+3. **Enable Caching**:
+   Add `.htaccess` or configure in GitHub Pages settings
+
+## 📚 Resources
+
+- **Icons**: [Font Awesome](https://fontawesome.com)
+- **Fonts**: [Google Fonts](https://fonts.google.com)
+- **Colors**: [Coolors](https://coolors.co)
+- **Gradients**: [CSS Gradient](https://cssgradient.io)
+- **Animations**: [Animate.css](https://animate.style)
+
+## 🤝 Contributing
+
+Feel free to fork this repository and customize it for your own portfolio!
+
+## 📞 Support
+
+If you have questions or need help:
+- **Email**: shantam.sharma98@gmail.com
+- **LinkedIn**: [linkedin.com/in/shantam98](https://linkedin.com/in/shantam98)
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 📬 Let's Connect!
+**Built with ❤️ by Shantam Sharma**
 
-I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a chat about AI and technology!
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shantam.sharma98@gmail.com)
-[![Phone](https://img.shields.io/badge/-Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+6590427630)
-
-</div>
-
----
-
-<div align="center">
-  
-*"Bridging the gap between cutting-edge AI research and real-world applications"*
-
-⭐ **Star this repository if you found it interesting!**
-
-</div>
+*Last Updated: November 2025*

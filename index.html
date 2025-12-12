@@ -10,7 +10,8 @@
     <title>Shantam Sharma | AI & Data Science Engineer</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,10 +75,11 @@
                             <span class="name">Shantam Sharma</span>
                         </h1>
                         <h2 class="hero-subtitle">Engineer, AI and Data Science</h2>
-                        <p class="hero-description">
-                            Senior Data Scientist & AI Systems Graduate Student with 5+ years of experience 
-                            developing and deploying machine learning solutions across diverse industries.
-                        </p>
+                        <div class="hero-info">
+                            <p>B.Tech, IIT Delhi</p>
+                            <p>M.Tech, NUS</p>
+                            <p>Central Singapore, Singapore</p>
+                        </div>
                         <div class="hero-buttons">
                             <a href="#contact" class="btn btn-primary">Get In Touch</a>
                         </div>
@@ -112,7 +114,7 @@
                         <!-- Timeline -->
                         <div class="hero-timeline">
                             <h4>My Journey</h4>
-                            <div class="timeline-compact">
+                            <div class="timeline-horizontal">
                                 <div class="timeline-item">
                                     <div class="timeline-icon"><i class="fas fa-school"></i></div>
                                     <div class="timeline-details">
@@ -158,6 +160,123 @@
             <a href="#about" aria-label="Scroll down">
                 <i class="fas fa-chevron-down"></i>
             </a>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of impactful projects demonstrating expertise in AI/ML solutions</p>
+            
+            <!-- Current Engagement -->
+            <div class="current-work">
+                <div class="current-badge">
+                    <i class="fas fa-circle pulse"></i> Currently Working On
+                </div>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3>AI Systems Research - NUS</h3>
+                        <span class="project-status current">In Progress</span>
+                    </div>
+                    <p class="project-description">
+                        Advanced research in neural architecture optimization and autonomous systems. 
+                        Exploring novel approaches to model efficiency and real-time inference for edge devices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">CUDA</span>
+                        <span class="tech-tag">Neural Architecture Search</span>
+                        <span class="tech-tag">Edge Computing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>GenAI Asset Integrity System</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Developed comprehensive GenAI solution for asset integrity and process safety at ADNOC. 
+                        Implemented Text2SQL chat agents, automated graph generation, and LLM-based trend analysis 
+                        to mitigate $10M+/year safety risks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Langchain</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">GPT-4</span>
+                        <span class="tech-tag">Azure ML</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> $10M+ annual risk mitigation
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Natural language to SQL query conversion for historical safety data</li>
+                            <li>Automated visualization generation for hazard trends</li>
+                            <li>Fine-tuned BERT model for incident classification</li>
+                            <li>Predictive analytics for risk likelihood assessment</li>
+                        </ul>
+                        <h4>Technical Highlights:</h4>
+                        <ul>
+                            <li>Deployed on Azure ML with auto-scaling capabilities</li>
+                            <li>Integrated with existing safety management systems</li>
+                            <li>Real-time alerting system for critical events</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Predictive Maintenance Platform</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Built end-to-end predictive maintenance solution for Indonesian manufacturing facility. 
+                        Reduced equipment downtime by 30% through advanced sensor data analysis and failure prediction.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Time Series Analysis</span>
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">MLflow</span>
+                    </div>
+                    <div class="project-impact">
+                        <i class="fas fa-chart-line"></i> 30% downtime reduction
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Real-time sensor data processing from 100+ machines</li>
+                            <li>Anomaly detection using deep learning</li>
+                            <li>Remaining useful life (RUL) prediction</li>
+                            <li>Dashboard for maintenance scheduling optimization</li>
+                        </ul>
+                        <h4>Business Impact:</h4>
+                        <ul>
+                            <li>$2M+ annual savings from reduced downtime</li>
+                            <li>Improved maintenance team efficiency by 40%</li>
+                            <li>Extended equipment lifespan by 15%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
         </div>
     </section>
 
@@ -280,162 +399,6 @@
                         <span class="skill-tag advanced">Mentoring</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section -->
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A selection of impactful projects demonstrating expertise in AI/ML solutions</p>
-            
-            <!-- Current Engagement -->
-            <div class="current-work">
-                <div class="current-badge">
-                    <i class="fas fa-circle pulse"></i> Currently Working On
-                </div>
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3>AI Systems Research - NUS</h3>
-                        <span class="project-status current">In Progress</span>
-                    </div>
-                    <p class="project-description">
-                        Advanced research in neural architecture optimization and autonomous systems. 
-                        Exploring novel approaches to model efficiency and real-time inference for edge devices.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">CUDA</span>
-                        <span class="tech-tag">Neural Architecture Search</span>
-                        <span class="tech-tag">Edge Computing</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>GenAI Asset Integrity System</h3>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <p class="project-description">
-                        Developed comprehensive GenAI solution for asset integrity and process safety at ADNOC. 
-                        Implemented Text2SQL chat agents, automated graph generation, and LLM-based trend analysis 
-                        to mitigate $10M+/year safety risks.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Langchain</span>
-                        <span class="tech-tag">BERT</span>
-                        <span class="tech-tag">GPT-4</span>
-                        <span class="tech-tag">Azure ML</span>
-                    </div>
-                    <div class="project-impact">
-                        <i class="fas fa-chart-line"></i> $10M+ annual risk mitigation
-                    </div>
-                    <button class="project-expand" onclick="toggleProjectDetails(this)">
-                        <i class="fas fa-chevron-down"></i> View Details
-                    </button>
-                    <div class="project-details">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Natural language to SQL query conversion for historical safety data</li>
-                            <li>Automated visualization generation for hazard trends</li>
-                            <li>Fine-tuned BERT model for incident classification</li>
-                            <li>Predictive analytics for risk likelihood assessment</li>
-                        </ul>
-                        <h4>Technical Highlights:</h4>
-                        <ul>
-                            <li>Deployed on Azure ML with auto-scaling capabilities</li>
-                            <li>Integrated with existing safety management systems</li>
-                            <li>Real-time alerting system for critical events</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Predictive Maintenance Platform</h3>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <p class="project-description">
-                        Built end-to-end predictive maintenance solution for Indonesian manufacturing facility. 
-                        Reduced equipment downtime by 30% through advanced sensor data analysis and failure prediction.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Time Series Analysis</span>
-                        <span class="tech-tag">LSTM</span>
-                        <span class="tech-tag">MLflow</span>
-                    </div>
-                    <div class="project-impact">
-                        <i class="fas fa-chart-line"></i> 30% downtime reduction
-                    </div>
-                    <button class="project-expand" onclick="toggleProjectDetails(this)">
-                        <i class="fas fa-chevron-down"></i> View Details
-                    </button>
-                    <div class="project-details">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Real-time sensor data processing from 100+ machines</li>
-                            <li>Anomaly detection using deep learning</li>
-                            <li>Remaining useful life (RUL) prediction</li>
-                            <li>Dashboard for maintenance scheduling optimization</li>
-                        </ul>
-                        <h4>Business Impact:</h4>
-                        <ul>
-                            <li>$2M+ annual savings from reduced downtime</li>
-                            <li>Improved maintenance team efficiency by 40%</li>
-                            <li>Extended equipment lifespan by 15%</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Computer Vision QC System</h3>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <p class="project-description">
-                        Developed automated quality control system for Unilever Peru production lines. 
-                        Achieved 95% accuracy in defect detection, significantly improving product quality consistency.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">YOLO</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Edge Deployment</span>
-                    </div>
-                    <div class="project-impact">
-                        <i class="fas fa-chart-line"></i> 95% detection accuracy
-                    </div>
-                    <button class="project-expand" onclick="toggleProjectDetails(this)">
-                        <i class="fas fa-chevron-down"></i> View Details
-                    </button>
-                    <div class="project-details">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Real-time defect detection at production speed</li>
-                            <li>Multi-class defect classification</li>
-                            <li>Integration with existing conveyor systems</li>
-                            <li>Automated reporting and analytics dashboard</li>
-                        </ul>
-                        <h4>Technical Implementation:</h4>
-                        <ul>
-                            <li>Custom YOLO model trained on 50K+ labeled images</li>
-                            <li>Deployed on edge devices for low-latency inference</li>
-                            <li>Continuous learning pipeline for model improvement</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-cta">
-                <p>Want to see more of my work?</p>
-                <a href="projects.html" class="btn btn-primary">View All Projects</a>
             </div>
         </div>
     </section>

@@ -270,26 +270,22 @@ function typeWriter(element, text, speed = 100) {
 // }
 
 // ============================================
-// Smooth Reveal for Timeline Items
+// Smooth Reveal for Horizontal Timeline Steps
 // ============================================
 const timelineObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
             setTimeout(() => {
                 entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateX(0)';
+                entry.target.style.transform = 'translateY(0)';
             }, index * 100);
         }
     });
 }, { threshold: 0.2 });
 
-document.querySelectorAll('.timeline-item').forEach(item => {
+document.querySelectorAll('.timeline-step').forEach(item => {
     item.style.opacity = '0';
-    if (item.classList.contains('left')) {
-        item.style.transform = 'translateX(-50px)';
-    } else {
-        item.style.transform = 'translateX(50px)';
-    }
+    item.style.transform = 'translateY(20px)';
     item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     timelineObserver.observe(item);
 });

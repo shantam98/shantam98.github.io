@@ -1,0 +1,24 @@
+/* Coming Soon Message Styling */
+.coming-soon-message {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.coming-soon-message h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.coming-soon-message p {
+    color: var(--text-secondary);
+}
+
+.coming-soon-message .btn {
+    margin-top: 1rem;
+}

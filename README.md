@@ -103,7 +103,6 @@ If you have questions or need help:
 - **Email**: shantam.sharma98@gmail.com
 - **LinkedIn**: [linkedin.com/in/shantam98](https://linkedin.com/in/shantam98)
 
-
 ---
 
 **Built with ❤️ by Shantam Sharma**

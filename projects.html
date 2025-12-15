@@ -23,6 +23,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="coming-soon-style.css">
+    <link rel="stylesheet" href="project-categories-style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -52,17 +53,107 @@
         <div class="container">
             <h1 class="section-title">All Projects</h1>
             <p class="section-subtitle">Complete portfolio of AI/ML projects demonstrating expertise across various domains</p>
+            
+            <!-- Sub Navigation -->
+            <nav class="sub-nav">
+                <a href="#consulting" class="sub-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    Consulting
+                </a>
+                <a href="#research" class="sub-nav-link">
+                    <i class="fas fa-flask"></i>
+                    Research
+                </a>
+                <a href="#academic" class="sub-nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    Academic
+                </a>
+            </nav>
         </div>
     </section>
 
     <!-- All Projects Section -->
     <section class="section projects-section">
         <div class="container">
-            <div class="coming-soon-message">
-                <i class="fas fa-code" style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 1rem;"></i>
-                <h2>Detailed Project Information Coming Soon</h2>
-                <p style="font-size: 1.1rem; margin: 1rem 0 2rem 0;">Please refer to my CV for project details in the meantime.</p>
-                <a href="https://drive.google.com/YOUR_CV_LINK" target="_blank" class="btn btn-primary">View CV</a>
+            <!-- Consulting Projects -->
+            <div id="consulting" class="project-category">
+                <div class="category-header">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <h2 class="category-title">Consulting Projects</h2>
+                        <p class="category-description">Industry projects delivering real-world business impact</p>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Add consulting projects here -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Project Title</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Project description goes here...
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Projects -->
+            <div id="research" class="project-category">
+                <div class="category-header">
+                    <i class="fas fa-flask"></i>
+                    <div>
+                        <h2 class="category-title">Research Projects</h2>
+                        <p class="category-description">Academic research and cutting-edge AI exploration</p>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Add research projects here -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Project Title</h3>
+                            <span class="project-status current">In Progress</span>
+                        </div>
+                        <p class="project-description">
+                            Project description goes here...
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic/Course Projects -->
+            <div id="academic" class="project-category">
+                <div class="category-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h2 class="category-title">Academic/Course Projects</h2>
+                        <p class="category-description">University coursework and learning projects</p>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Add academic projects here -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Project Title</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Project description goes here...
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Current Engagement -->

@@ -85,18 +85,209 @@
                     </div>
                 </div>
                 <div class="projects-grid">
-                    <!-- Add consulting projects here -->
+                    <!-- Project 1: GenAI for Asset Integrity -->
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Project Title</h3>
+                            <h3>GenAI for Asset Integrity and Process Safety</h3>
                             <span class="project-status completed">Completed</span>
                         </div>
                         <p class="project-description">
-                            Project description goes here...
+                            Mitigated risk of $10M+/year due to safety incidents at ADNOC by developing a comprehensive RAG agent 
+                            with automated graph generation and LLM-based analysis for hazardous events.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Technology 1</span>
-                            <span class="tech-tag">Technology 2</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Text2SQL</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">BERT</span>
+                            <span class="tech-tag">Azure ML</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-chart-line"></i> $10M+/year risk mitigation
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Developed RAG agent with automated graph generation on top of Text2SQL engine to visualize latest trends</li>
+                                <li>Utilized LLMs for trend analysis and key insights on hazardous events using prompt engineering & data manipulation</li>
+                                <li>Devised control KPIs to indicate likelihood of hazardous events at each equipment and location in various assets</li>
+                                <li>Performed benchmarking of pre-trained LLMs and fine-tuned BERT models for text-classification on Oil&Gas data</li>
+                                <li>Deployed dockerized applications on AzureML and presented demo at ADIPEC 2024</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Recommendation System -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Recommendation System for Retail</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Developed recommendation engine for Jack in the Box (USA) to suggest top 3 relevant products to consumers, 
+                            integrating customer profiling with collaborative filtering techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Collaborative Filtering</span>
+                            <span class="tech-tag">Matrix Factorization</span>
+                            <span class="tech-tag">K-Means Clustering</span>
+                            <span class="tech-tag">DBSCAN</span>
+                            <span class="tech-tag">Data Warehouse</span>
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Reconciled datasets from customer engagement, loyalty and marketing tools to build comprehensive data warehouse</li>
+                                <li>Evaluated various recommendation techniques based on collaborative filtering and matrix factorization</li>
+                                <li>Profiled customers using KMeans Clustering and DBSCAN algorithms</li>
+                                <li>Integrated customer profiles with recommendation model for personalized product suggestions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Vision Models for Real-Time Inspection -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Vision Models for Real-Time Inspection</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Minimized safety risks and operation downtime for PTFI through real-time anomaly detection models 
+                            deployed on edge devices with optimized 4 fps latency using TensorRT.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">GLCM</span>
+                            <span class="tech-tag">Gabor Filters</span>
+                            <span class="tech-tag">Autoencoder</span>
+                            <span class="tech-tag">Siamese Network</span>
+                            <span class="tech-tag">TensorRT</span>
+                            <span class="tech-tag">Edge Computing</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-chart-line"></i> 4 fps real-time inference
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Explored efficacy of features using GLCM, Gabor filters, power spectral density and optical flow algorithms on mineral ore images</li>
+                                <li>Analyzed texture, volume and flow rate properties of mineral ore through advanced image processing</li>
+                                <li>Trained and fine-tuned anomaly detection models using Autoencoder and Siamese network architectures</li>
+                                <li>Deployed final model on GPU-powered edge computing devices using TensorRT for optimized latency of 4 fps</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Physical Modelling -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Physical Modelling for Product Quality Forecast</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Increased molybdenum mineral production by 3% through Python-based digital-twin modeling 
+                            of chemical plants with automated optimization and ML-based quality forecasting.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Digital Twin</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">L-BFGS-B</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">RNN</span>
+                            <span class="tech-tag">CNN</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-chart-line"></i> 3% production increase
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Developed Python-based digital-twin model of three chemical plants to predict impurity concentration in the product</li>
+                                <li>Automated digital-twin performance optimization using methods like L-BFGS-B, Nelder-Mead and trust-region</li>
+                                <li>Analyzed ML techniques like Random Forest, Boosted Trees, RNNs and CNNs to forecast product quality</li>
+                                <li>Achieved 3% increase in molybdenum mineral production through optimized process control</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Mining Operation Optimization -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Mining Operation Optimization</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Increased production hours of mining operations by 8% through Kalman Filter-based mineral concentration 
+                            estimation and CNN-powered obstruction detection with 98% accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kalman Filter</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Azure ML</span>
+                            <span class="tech-tag">Edge Devices</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-chart-line"></i> 8% production hours increase
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Implemented and fine-tuned Kalman Filter to accurately estimate mineral concentrations in absence of sensors</li>
+                                <li>Trained CNN-based image classification model to detect obstruction in mineral ore crushers with 98% accuracy</li>
+                                <li>Deployed solutions across edge devices for real-time processing</li>
+                                <li>Integrated AzureML toolkit for real-time monitoring and performance tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Customer Churn Analysis -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Customer Churn Analysis for Teleservices</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Analyzed over 300 GB of network data to identify factors contributing to customer churn at NSight Teleservices, 
+                            utilizing ML classification models to predict churn likelihood.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Big Data</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Network Analysis</span>
+                            <span class="tech-tag">Churn Prediction</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-database"></i> 300 GB data analyzed
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Analyzed over 300 GB of network performance and traffic data to identify hotspot towers serving churned customers</li>
+                                <li>Conducted competitor analysis on offered services and correlated inaccuracies in billing with poor customer service</li>
+                                <li>Explored efficacy of classification models like Random Forest and XGBoost to represent churn likelihood of customers</li>
+                                <li>Delivered insights to improve customer retention strategies and service quality</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

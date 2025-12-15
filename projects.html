@@ -330,18 +330,39 @@
                     </div>
                 </div>
                 <div class="projects-grid">
-                    <!-- Add academic projects here -->
+                    <!-- Project 1: MAVI -->
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Project Title</h3>
+                            <h3>Mobility Assistant for Visually Impaired (MAVI)</h3>
                             <span class="project-status completed">Completed</span>
                         </div>
                         <p class="project-description">
-                            Project description goes here...
+                            Developed an assistive device at IIT Delhi under Prof. M. Balakrishnan to help visually impaired individuals 
+                            navigate their environment using real-time object detection with audio feedback.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Technology 1</span>
-                            <span class="tech-tag">Technology 2</span>
+                            <span class="tech-tag">YOLO-v2</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Text-to-Speech</span>
+                            <span class="tech-tag">Movidius Neural Stick</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-chart-line"></i> 8 fps real-time, 70% CPU reduction
+                        </div>
+                        <button class="project-expand" onclick="toggleProjectDetails(this)">
+                            <i class="fas fa-chevron-down"></i> View Details
+                        </button>
+                        <div class="project-details">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Deployed pretrained YOLO-v2 object detection model on Raspberry Pi chip for real-time detection</li>
+                                <li>Integrated text-to-speech capabilities with object detection output in Python for audio feedback</li>
+                                <li>Optimized latency to 8 fps by integrating Movidius neural stick to reduce CPU load by 70%</li>
+                                <li>Created an accessible mobility solution for visually impaired individuals</li>
+                            </ul>
+                            <p><strong>Timeline:</strong> Jan 2019 - April 2019</p>
+                            <p><strong>Supervisor:</strong> Prof. M. Balakrishnan, IIT Delhi</p>
                         </div>
                     </div>
                 </div>

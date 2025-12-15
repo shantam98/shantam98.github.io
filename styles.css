@@ -1290,6 +1290,7 @@ img {
     color: var(--primary-color);
     font-weight: 600;
     transition: all var(--transition-base);
+    word-break: break-all;
 }
 
 .contact-link:hover {
@@ -1340,9 +1341,10 @@ img {
    Footer
    ============================================ */
 .footer {
-    background-color: var(--text-primary);
-    color: white;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
     padding: var(--spacing-xl) 0 var(--spacing-md);
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
@@ -1409,11 +1411,11 @@ img {
 .footer-bottom {
     text-align: center;
     padding-top: var(--spacing-lg);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-bottom p {
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 /* ============================================

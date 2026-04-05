@@ -187,7 +187,7 @@
                 <div class="project-card featured">
                     <div class="project-header">
                         <h3>Deepfake Detection and Inference Optimization - I2R, Agency for Science, Technology and Research (A*STAR)</h3>
-                        <span class="project-status current">Completed</span>
+                        <span class="project-status completed">Completed</span>
                     </div>
                     <p class="project-description">
                         Key responsibilities include optimizing deepfake detection models for deployment on H100 GPUs by profiling call-stacks to reduce CPU overhead, 
@@ -204,6 +204,39 @@
             </div>
 
             <div class="projects-grid">
+                <!-- Project 0: Context BOB -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Context BOB: Contextual Bandit-Over-Bandit Optimization</h3>
+                        <span class="project-status current">In Progress</span>
+                    </div>
+                    <p class="project-description">
+                        Developing a meta-learning system at M3S, SMART that simultaneously optimizes learner configuration selection
+                        and bandit arm selection. A GP-UCB meta-bandit adaptively selects the best predictor config
+                        from a portfolio each round, outperforming fixed offline baselines in non-stationary contextual bandit settings.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Contextual Bandits</span>
+                        <span class="tech-tag">Gaussian Process</span>
+                        <span class="tech-tag">Thompson Sampling</span>
+                        <span class="tech-tag">MABwiser</span>
+                        <span class="tech-tag">MLflow</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                    <button class="project-expand" onclick="toggleProjectDetails(this)">
+                        <i class="fas fa-chevron-down"></i> View Details
+                    </button>
+                    <div class="project-details">
+                        <h4>Key Responsibilities:</h4>
+                        <ul>
+                            <li>Designed a bandit-over-bandit meta-learning framework to adaptively select learner configurations online</li>
+                            <li>Built modular estimators (linear, polynomial, GP, neural NTK-based) and bandit policies (Thompson Sampling, UCB, Greedy)</li>
+                            <li>Implemented meta-bandit modes including GP-UCB, GP-TS, MABwiser UCB/EGreedy, and Exponential Weight Averaging</li>
+                            <li>Benchmarked online meta-learner against offline baselines across multiple seeds, environments, and function types</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">

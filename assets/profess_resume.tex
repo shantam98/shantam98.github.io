@@ -1,0 +1,349 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{pifont}
+% Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Shantam Sharma} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{National University of Singapore, Singapore}  %
+\address{\href{mailto:shantam.s@u.nus.edu}{\color{red}{shantam.s@u.nus.edu}} \\ \href{https://linkedin.com/in/shantam98/}{\color{red}{LinkedIn}} \\ \href{https://shantam98.github.io/}{\color{red}{Github}} \\ {+65 84696935}}  %
+
+\titlespacing*{\rSection}{0pt}{0pt}{0pt}
+
+\begin{document}
+\definecolor{blue(ryb)}{rgb}{0.01, 0.28, 1.0}
+\color{blue(ryb)}
+
+%\begin{rSection}{Summary}
+%\color{black}
+%\vspace{-1pt}
+%\begingroup \spaceskip=2.2pt
+%Accomplished Data Scientist with 5+ years of experience developing and deploying machine learning solutions across diverse industries including Mining, Retail, Oil \& Gas, and Banking for global clients spanning UAE, USA, Indonesia, Netherlands, and Peru. Passionate about bridging the gap between cutting-edge AI research and real-world applications, with a track record of presenting solutions at industry conferences and contributing to the AI research community. 
+%\endgroup
+%\end{rSection} 
+%\vspace{-2pt}
+
+\begin{rSection}{Education}
+\color{black}
+\begin{itemize}[leftmargin=1em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{-1.5ex}]
+\item
+{\bf National University of Singapore, Singapore} \hfill {2025 - Present} \\
+{\emph{Master's of Technology, AI Systems}}
+\item 
+{\bf Indian Institute of Technology, Delhi (IITD)} \hfill {2016 - 2020} \\
+{\emph{Bachelor's of Technology, Industrial and Production Engineering | First Class Honours}}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{TECHNICAL SKILLS}
+\color{black}
+\vspace{-2pt}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Technical Skills &  Prompt Engineering, LLM fine tuning, Hyperparameter tuning,\\ 
+% & Data Processing, Computer Vision, End-to-End Deployment \\
+Technologies & Tableau, Git, Docker, Snowflake, AzureML, AWS Sagemaker, Triton
+\\
+Programming Languages & Python, C++, SQL, MATLAB \\
+Relevant ML Libraries & Pytorch, Langchain, Mlflow, NLTK, OpenCV, Sklearn, Pandas, Numpy \\
+%Relavant Courses & Pattern Recognition Systems, Intelligent Robotic Systems, Intelligent \\
+%& Reasoning Systems, Data Structures, Database Management systems
+
+\end{tabular}
+\end{rSection}
+\vspace{-5pt}
+
+\begin{rSection}{Work Experience}
+\color{black}
+\textbf{Research Intern, Singapore-MIT Alliance for Research and Technology (SMART)} \hfill Jan 2026 - Present
+\begin{itemize}[leftmargin=1em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+
+\item \begingroup \spaceskip=2.5pt
+    Experimented with online bandit/expert strategies — Hedge, AdaHedge, GP-UCB, GP-TS, and FTL— for adaptive model selection in stochastic contextual bandit settings.
+\endgroup
+\item \begingroup \spaceskip=2.5pt
+    Implemented a co-optimization algorithm for online optimization of model selection and arm selection, consistently reducing cumulative regret ver-
+sus any fixed learner baseline across non-linear reward environments.
+\endgroup
+\end{itemize}
+
+\vspace{-2pt}
+\textbf{Student Researcher, I2R - Astar}: \emph{Improved DinoV3 model inference throughput by 33\%} \hfill Nov 2025 - Present
+\begin{itemize}[leftmargin=1em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+\item  \begingroup
+	\spaceskip=2.5pt
+		Conducted quantization experiments (dynamic, static, QAT) on meta's pretrained Dino-V3 model fine-tuned for classification. Reduced memory footprint by 60\% with INT8 precision static quantization using NVIDIA's modelopt library.
+	\endgroup
+\item Converted the quantized model to tensorrt engine and deployed it using NVIDIA's triton inference server.
+\end{itemize}
+
+\vspace{-2pt}
+\textbf{Senior Data Scientist, World Wide Technology Inc.} \hfill July 2020 - July 2025
+\\ \emph{Received employee excellence award and certificate for delivering cutting edge ML solutions in mining industry}
+ \begin{itemize}[leftmargin=1em,rightmargin=0.2in ,itemsep=-5pt, topsep=-5pt, before={\vspace{0.0ex}},after=\vspace{-1ex}]
+
+%ADNOC Summary
+
+ \item \begingroup \spaceskip=2.2pt \textbf{GenAI for Asset Integrity and Process Safety}: \emph{Mitigated risk of 10M\$/y due to safety incidents at ADNOC}
+			\endgroup
+		\begin{itemize}[leftmargin=0em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+		\item  \begingroup
+			\spaceskip=2.5pt
+				Developed a RAG agent with automated graph generation on top of Text2SQL engine to visualise latest trends
+			\endgroup
+		\item \begingroup
+			\spaceskip=2.2pt
+				Utilized LLMs for trend analysis and key insights on hazardous events using prompt engineering \& data manipulation
+				\endgroup
+			\item \begingroup
+			\spaceskip=2.2pt
+				Devised control KPIs to indicate the likelihood of hazardous events at each equipment and location in various assets
+				\endgroup
+		\item 
+\begingroup
+			\spaceskip=2.5pt
+				Performed benchmarking of pre-trained LLMs and fine-tuned BERT models for text-classification on Oil\&Gas data			\endgroup
+		\item Deployed the dockerized applications on AzureML and presented a demo of the final product at ADIPEC 2024
+		\end{itemize}
+
+ \item \textbf{Recommendation System for Retail}:
+\begingroup
+			\spaceskip=2.2pt
+\emph{Recommending top 3 relevant products to consumors at JITB (USA)}
+			\endgroup
+		\begin{itemize}[leftmargin=0em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+		\item  \begingroup \spaceskip=2.2pt
+				Reconciled datasets collated by tools like customer engagement, loyalty and marketing, to build a data warehouse
+			\endgroup
+		\item \begingroup \spaceskip=2.5pt
+				Evaluated various techniques based on collaborative filtering and matrix factorization for recommendation model
+				\endgroup
+		\item \begingroup \spaceskip=2.2pt Profiled customers using KMeans Clustering and DBSCAN; integrated customer profiles with recommendation model\endgroup
+		\end{itemize}
+
+ \item \begingroup \spaceskip=2.0pt \textbf{Vision Models for Real-Time Inspection}: \emph{Minimized safety risks and operation downtime for PTFI}\endgroup
+		\begin{itemize}[leftmargin=0em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+		\item  \begingroup
+			\spaceskip=2.5pt
+				Explored efficacy of features derived using GLCM, Gabor filters, power spectral density and optical flow like algorithms on images of mineral ore to depict the properties of its texture, volume and flow rate
+			\endgroup
+		\item \begingroup
+			\spaceskip=2.4pt
+				Trained and fine-tuned anomaly detection models using architechtures including Autoencoder and Siamese network
+				\endgroup
+		\begingroup \spaceskip=2.4pt \item Deployed the final model utilizing gpu's on edge computing devices in TensorRT for optimized latency of 4 fps\endgroup
+		\end{itemize}
+
+\item \textbf{Physical Modelling for Product Quality Forecast}: \emph{Increased production of molybdenum mineral by 3 \%}
+		\begin{itemize}[leftmargin=0em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+		\item \begingroup
+			\spaceskip=2.0pt
+				Developed Python-based digital-twin model of three chemical plants to predict impurity concentration in the product
+			\endgroup
+		\item \begingroup
+			\spaceskip=2.0pt
+			Automated digital-twin performance optimization using methods like L-BFGS-B, Nelder-Mead and trust-region
+		\endgroup
+\item Analyzed ML techniques like Random Forest, Boosted Trees, RNNs and CNNs to forecast product quality
+		\end{itemize}
+
+% DMB and DPJ summary
+
+ \item \textbf{Mining Operation Optimization}:
+\begingroup
+			\spaceskip=2.4pt
+\emph{Increased production hours of mining operations by 8\%}
+			\endgroup
+		\begin{itemize}[leftmargin=0em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+		\item  \begingroup
+			\spaceskip=2.2pt
+				Implemented and fine-tuned Kalman Filter to accurately estimate mineral concentrations in the absence of sensors
+			\endgroup
+		\item \begingroup
+			\spaceskip=2.5pt
+				Trained a CNN-based image classification model to detect obstruction in mineral ore crushers with 98\% accuracy
+				\endgroup
+		\item Deployed these solutions across edge devices and integrated AzureML toolkit for real-time monitoring
+		\end{itemize}
+
+% \item \textbf{Churn Analytics}:
+%\begingroup
+%			\spaceskip=2.2pt
+%\emph{Deriving insights from network data to account for churned customers for NSight teleservices }
+%			\endgroup
+%		\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%		\item  \begingroup
+%			\spaceskip=2.2pt
+%				Analyzed over 300 GB of network performance and traffic data to identify hotspot towers serving churned customers
+%			\endgroup
+%		\item \begingroup
+%			\spaceskip=2.5pt
+%				Conducted competitor analysis on offered services \& correlated inaccuracies in billing with poor customer service
+%				\endgroup
+%		\item \begingroup
+%			\spaceskip=2.3pt
+%				Explored efficacy of classification models like Random Forest and XGB, to represent churn likelihood of customers\endgroup
+%		\end{itemize}
+
+%\vspace{-10pt}
+\item \textbf{Federated Learning}: \emph{WWT R\&D Team} -  
+		\begingroup
+		\spaceskip=2.5pt
+			Conducted analysis of two FL methodologies i.e. Auto-Fed averaging and Hyper-Networks with personal classifier for image classification on CIFAR-10 dataset 
+		\begin{itemize}[leftmargin=0em,itemsep=-6pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+		\item  Analysed both methodologies on KPIs indicating generalization, personalization and robustness of the method
+		\end{itemize}
+			\endgroup
+\end{itemize}
+%\vspace{5pt}
+% \textbf{R\&D Projects:} \emph{Projects aimed at exploring new avenues in ML Industry; Published 2 articles with WWT}
+% \begin{itemize}[leftmargin=1em,rightmargin=0.2in ,itemsep=-5pt, topsep=-5pt, before={\vspace{0.0ex}},after=\vspace{-1ex}]
+%		%\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-4pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%\item \textbf{Quantum Computing} (QC): 
+%		\begingroup
+%		\spaceskip=2.5pt
+%			Executed basic QC programs such as bell state and classification using different libraries such as Qiskit, Q\#, Bracket and Pennylane
+%		\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%		\item  \begingroup \spaceskip=2.0pt Compared cost and performance of various quantum hardwares by Rigetti and IONQ on AWS and Azure QC services\endgroup
+%		\end{itemize}
+%		\endgroup
+%
+%		\item \textbf{Federated Learning} (FL): 
+%		\begingroup
+%		\spaceskip=2.5pt
+%			Conducted analysis of two FL methodologies i.e. Auto-Fed averaging and Hyper-Networks with personal classifier for image classification on CIFAR-10 dataset 
+%\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%\item  Analysed both methodologies on KPIs indicating generalization, personalization and robustness of the method
+%\end{itemize}
+%		\endgroup
+%%		\item \textbf{AIOps}: \begingroup
+%%			\spaceskip=2.2pt
+%%				Developed modular and dockerized ML framework using Python libraries ADTK and ARIMA for quick deployment of ML applications such as failure detection and load forecasting in IT servers at scale
+%%			\endgroup
+%%		\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%%			\item \begingroup
+%%			\spaceskip=2.5pt Integrated the solution with an ETL toolkit to query data from popular IT databases like Splunk and Prometheus 
+%%			\endgroup
+%%			\end{itemize}
+%%		\item \textbf{Data Center Optimization}: \begingroup
+%%			\spaceskip=2.5pt
+%%			Trained a neural network model to estimate power utilization effectiveness (PUE) of data centers as a function of its cooling system parameters; Optimized the model architechture using Optuna
+%%			\endgroup
+%%		\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%%			\item \begingroup
+%%			\spaceskip=2.5pt Conducted PUE optimization analysis on SHAP values of trained model reflecting impact of cooling parameters
+%%			\endgroup
+%%			\end{itemize}
+%
+%%		\item \textbf{Speech and Video Refinement}: Trained a Random-Forest classification model to tag vocal disfluencies in speech using MFCC features of audio with 90 \% accuracy
+%%			\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%%			\item \begingroup
+%%			\spaceskip=2.0pt Regenerated frames with vocal disfluencies using optical flow based frame interpolation to get refined video output
+%%			\endgroup
+%%			\end{itemize}
+%		%\end{itemize}
+% \end{itemize}
+
+\end{rSection} 
+
+\begin{rSection}{Research Publications} 
+\color{black}
+\begin{itemize}[leftmargin=1em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.5ex}},after=\vspace{-1.5ex},partopsep=0pt]
+
+    \item  \href{https://www.wwt.com/blog/sustainable-data-center-power-usage-effectiveness-estimation-and-optimization}{\textbf{\color{red}{WWT R\&D}}}: \begingroup
+					\spaceskip=3pt
+					 An article on ``Power Usage Effectiveness(PUE) Optimization" for datacenters {\hfill Jul, 2023}
+					\endgroup
+	\item 	 \href{https://www.wwt.com/wwt-research/a-modular-approach-to-aiops}{\textbf{\color{red}{WWT R\&D}}}: Presented on ``A Modular approach to AIOps" at NVIDIA GTC'22  {\hfill Nov, 2022}
+
+%    \item \textbf{WWT India}: Received Excellence Award for outstanding performance in mining industry projects {\hfill June, 2022}
+%    \item 	Secured 100th percentile in Mathematics at All India Senior Secondary Certificate Examination {\hfill May, 2016}
+%    \item	\textbf{National Standard Examination of Physics}: Ranked in Top 1\% students who appeared in NSEP {\hfill Jan, 2016}
+
+\end{itemize}
+\end{rSection}
+
+
+%\vspace{2pt}
+%\begin{rSection}{Internships and Projects}
+%\color{black}
+% \begin{itemize}[leftmargin=1em,itemsep=-5pt, topsep=-5pt, before={\vspace{0ex}},after=\vspace{-0.5ex}]
+%%\vspace{-1.25emz
+%\item \textbf{Indian Institute of Technology, New Delhi} - \emph{Associate Researcher, Prof. Varun R.}  \hfill Sep 2022 - Mar 2023
+%\begin{itemize}[leftmargin=0em,rightmargin=0.4in, topsep=-5pt,itemsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%		\item \begingroup
+%			\spaceskip=2.5pt
+%			Analyzed performance of a forecast based stock selection technique with traditional Markowitz mean-variance
+%			\endgroup
+%		\item \begingroup \spaceskip=2.5pt
+%			Validated test results with right tailed t-test (95 \% confidence) indicating better performance of new technique
+%			\endgroup
+%\end{itemize}
+%\item \textbf{NoBroker Technology Solutions, Bangalore} - \emph{Business Analyst Intern}\hfill May 2019 - July 2019
+%\begin{itemize}[leftmargin=0em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%		\item \begingroup
+%			\rightmargin = 0.4in
+%			\spaceskip =2.0 pt
+%			Designed and implemented strategies in SQL (i) to improve ``relationship executive" allocation to customer based on customer details and executive performance, (ii) reallocation strategies in case of unavailabilty of assigned executive
+%			\endgroup
+%\end{itemize}
+%\item \textbf{Mobility Assistant for Visually Impaired (MAVI)} - \emph{Prof. M. Balakrishnan} \hfill Jan 2019 - April 2019
+%\begin{itemize}[leftmargin=0em,rightmargin=0.3in ,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.3ex}},after=\vspace{0.5ex}]
+%		\item \begingroup
+%			\rightmargin = 0.4in
+%			\spaceskip =2.5 pt
+%			Deployed a pretrained ``YOLO-v2" object detection model on Raspberry-Pi chip with text-to-speech API in Python
+%			\endgroup
+%		\item Optimized latency to 8 fps by integrating Movidius neural stick to reduce cpu load by 70 \%
+%		\item Designed and assembled 3-D printed model of our final product using CAD software 
+%\end{itemize}
+% \end{itemize}
+%\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{PUBLICATIONS} 
+%\begin{itemize}
+ %   \item 	{\bf A Modular approach to AIOps} \href{https://www.wwt.com/wwt-research/a-modular-approach-to-aiops}{[Paper]}\\
+   % Published at World Wide Technology (WWT), presented at NVIDIA GPU Technology Conference 2022
+  %  \item 	{\bf Sustainable Data Center: Power Usage Effectiveness Estimation and Optimization} \\
+    %Published at World Wide Technology (WWT) 2023
+%\end{itemize}
+
+
+%end{rSection}
+
+%\begin{rSection}{Extra Curricular Activities}
+%\color{black}
+%\begin{itemize}[leftmargin=1em,itemsep=-5pt, topsep=-5pt, before={\vspace{-0.5ex}},after=\vspace{-1.5ex},partopsep=0pt]
+%
+%\item \textbf{Hobbies}: Football (Soccer), Dance, Running, Surfing
+% \item 	\textbf{Performing Arts} : \begingroup
+%	\spaceskip=2.2pt
+%	Secured 6 podium finishes in various dance competitions as the head of Dance Club at IITD 
+%	\endgroup
+%\item \textbf{Social responsibility}: Volunteered to organise blood donation camps with BloodConnect Foundation
+%\end{itemize}
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%\begin{rSection}{Relevant Courses} 
+%\begin{itemize}
+ %   \item Admin for the \href{https://discord.com/invite/WWbjEaZ}{FAANGPath Discord community} with over 6000+ job seekers and industry mentors. Actively involved in facilitating online events, career conversations, and more alongside other admins and a team of volunteer moderators! 
+%\end{itemize}
+
+
+%\end{rSection}
+
+%\begin{rSection}{Research Interest}
+
+%{Computer Vision, Natural Language Processing, Time-series forecasting, Applied AI.}
+
+
+%\end{rSection}
+\end{document}

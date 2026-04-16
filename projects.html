@@ -337,22 +337,24 @@
                         </div>
                     </div>
 
-                    <!-- Project 2: Context_BOB -->
+                    <!-- Project 2: Context BOB / COMAS -->
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Context BOB: Contextual Bandit-Over-Bandit Optimization</h3>
+                            <h3>Context BOB — COMAS: Contextual Multi-Armed Bandit with Algorithm Selection</h3>
                             <span class="project-status current">In Progress</span>
                         </div>
                         <p class="project-description">
-                            Developing a meta-learning system that simultaneously optimizes learner configuration selection
-                            and bandit arm selection. A GP-UCB meta-bandit adaptively selects the best predictor config
-                            from a portfolio each round, outperforming fixed offline baselines in non-stationary contextual bandit settings.
+                            Researching whether online algorithm selection can adapt to unknown reward function shapes without prior
+                            knowledge of which learner class fits best. A meta-bandit observes sliding-window MSE signals to
+                            adaptively select the best inner-bandit learner configuration each round from a portfolio, consistently
+                            outperforming any single fixed learner across diverse reward functions and bandit policies.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Contextual Bandits</span>
+                            <span class="tech-tag">Online Meta-Learning</span>
                             <span class="tech-tag">Gaussian Process</span>
+                            <span class="tech-tag">Neural Tangent Kernel</span>
                             <span class="tech-tag">Thompson Sampling</span>
-                            <span class="tech-tag">MABwiser</span>
                             <span class="tech-tag">scikit-learn</span>
                             <span class="tech-tag">MLflow</span>
                             <span class="tech-tag">PyTorch</span>
@@ -363,11 +365,11 @@
                         <div class="project-details">
                             <h4>Key Responsibilities:</h4>
                             <ul>
-                                <li>Designed and implemented a bandit-over-bandit meta-learning framework to adaptively select learner configurations online</li>
-                                <li>Built modular estimators (linear, polynomial, GP, neural NTK-based) and bandit policies (Thompson Sampling, UCB, Greedy)</li>
-                                <li>Implemented meta-bandit modes including GP-UCB, GP-TS, MABwiser UCB/EGreedy, and Exponential Weight Averaging</li>
-                                <li>Benchmarked online meta-learner against offline baselines across multiple seeds, environments, and function types</li>
-                                <li>Integrated MLflow for experiment tracking with per-round CSV traces and cumulative regret curve visualizations</li>
+                                <li>Designed a bandit-over-bandit framework where a meta-bandit (Hedge, AdaHedge, GP-UCB, GP-TS) adaptively selects among a portfolio of inner learner configs each round</li>
+                                <li>Built modular estimators — LinUCB/LinTS (Sherman-Morrison V⁻¹), polynomial expansion, GP (RBF + Woodbury inverse), and NeuralTS (NTK-at-init features) — with a unified interface</li>
+                                <li>Supported bandit policies (Thompson Sampling, UCB, Greedy) and benchmarked across reward function types (linear, square, cubic, sine, cosine, MLP)</li>
+                                <li>Evaluated online meta-learner against all fixed offline configs across multiple seeds, tracking cumulative regret with mean ± SEM plots</li>
+                                <li>Integrated MLflow with per-round CSV traces, debug arm logs, and artifact versioning for fully reproducible experiment tracking</li>
                             </ul>
                             <p><strong>Organization:</strong> M3S, Singapore-MIT Alliance for Research and Technology (SMART)</p>
                             <p><strong>Status:</strong> Ongoing</p>

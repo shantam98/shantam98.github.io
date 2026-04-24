@@ -187,11 +187,11 @@
                         <span class="project-status current">In Progress</span>
                     </div>
                     <p class="project-description">
-                        Researching whether online algorithm selection can adapt to unknown reward function shapes without prior knowledge
-                        of which learner class fits best. A meta-bandit (Hedge, AdaHedge, GP-UCB) observes sliding-window MSE signals
-                        to adaptively select from a portfolio of inner-bandit learner configurations — linear (LinUCB/LinTS),
-                        polynomial, Gaussian Process (RBF + Woodbury), and NeuralTS (NTK-at-init features) — each round, consistently
-                        outperforming any single fixed learner across diverse reward function types.
+                        Research on whether an online algorithm for policy selection can adapt to unknown reward function shapes without prior knowledge
+                        of which policy learns the best. A meta-bandit/expert observes MSE (or Doubly Robust MSE) signal
+                        to adaptively select from a portfolio of arm selecting policies — linear (LinUCB/LinTS),
+                        polynomial, and NeuralTS (NTK-at-init features) — each round, to consistently
+                        outperform any single fixed policy across diverse reward functions.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Contextual Bandits</span>
